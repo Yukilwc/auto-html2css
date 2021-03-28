@@ -1,0 +1,65 @@
+{
+  "name": "auto-html2css",
+  "displayName": "auto-html2css",
+  "description": "auto convert html to css",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:auto-html2css.html2css"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "auto-html2css.html2css",
+        "title": "html2css"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "auto-html2css.html2css",
+        "key": "ctrl+alt+z",
+        "mac": "cmd+alt+z",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "AutoHtml2Css",
+      "properties": {
+       "AutoHtml2Css.extraClassList": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": "dis_",
+          "description": "进行除外的class白名单"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.46.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "ramda": "^0.27.1"
+  }
+}
