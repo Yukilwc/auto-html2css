@@ -4,7 +4,7 @@
   "description": "auto convert html to css",
   "publisher": "liwenchao",
   "version": "0.0.2",
-  "icon": "logo.png",
+  "icon": "https://blog-misaka1033.oss-cn-beijing.aliyuncs.com/blog/images/logo-auto-html2css.png",
   "engines": {
     "vscode": "^1.46.0"
   },
