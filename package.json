@@ -2,6 +2,7 @@
   "name": "auto-html2css",
   "displayName": "auto-html2css",
   "description": "auto convert html to css",
+  "publisher": "liwenchao",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.46.0"
@@ -31,7 +32,7 @@
     "configuration": {
       "title": "AutoHtml2Css",
       "properties": {
-       "AutoHtml2Css.extraClassList": {
+        "AutoHtml2Css.extraClassList": {
           "type": [
             "string",
             "null"
