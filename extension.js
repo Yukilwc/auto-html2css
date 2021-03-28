@@ -31,13 +31,13 @@ function activate(context) {
 		// The code you place here will be executed every time your command is executed
 
 		console.log('==========test 1',)
-	// console.log('==========configuration ',configuration.get() )
+		// console.log('==========configuration ',configuration.get() )
 		try {
 			handleSelection()
 		}
 		catch (e) {
 			console.error(e.message)
-			vscode.window.showErrorMessage(e.message||'转换发生错误')
+			vscode.window.showErrorMessage(e.message || '转换发生错误')
 		}
 	});
 
@@ -48,8 +48,8 @@ function activate(context) {
 function deactivate() { }
 const handleSelection = () => {
 	const editor = vscode.window.activeTextEditor
-	const selection = editor?.selection
-	let text = editor?.document.getText(selection)
+	const selection = editor.selection
+	let text = editor.document.getText(selection)
 	let res = generate(text)
 	const clipboard = vscode.env.clipboard
 	clipboard.writeText(res)
