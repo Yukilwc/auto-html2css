@@ -9,13 +9,19 @@
 -->
 # auto-html2css README
 
+## 概述
+
+提高工作效率，减少重复劳动用
+
+[代码地址](https://github.com/Yukilwc/auto-html2css)
+
 ## 功能
 
 1 自动转换html结构中的class，生成嵌套层级的scss代码
 
 ## 使用
 
-> 大前提，需要在编辑器中，选中一段代码
+> 首先，需要在编辑器中，选中一段代码
 
 1. 命令，ctrl+shift+p,输入指令html2css,并执行
 2. 快捷键,ctrl+alt+z,执行
